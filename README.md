@@ -1,91 +1,80 @@
-# henricao
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aniversário do Henrique Neve Haddad</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #e3f2fd;
-            color: #333;
-            text-align: center;
-            padding: 20px;
-            margin: 0;
-        }
-        h1 {
-            font-size: 2.5em;
-            color: #0d47a1;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-        .bernard-image {
-            width: 200px;
-            margin-top: 20px;
-        }
-        .countdown {
-            font-size: 2em;
-            color: #1565c0;
-            margin: 20px 0;
-        }
-        .message {
-            background-color: #bbdefb;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px auto;
-            max-width: 600px;
-        }
-        footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #555;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aniversário Henrique Neves Haddad</title>
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f0f9ff, #dbe9f1);
+      color: #333;
+    }
+
+    /* Container styles */
+    .container {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #005f73;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    .image-container {
+      margin: 2rem 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>🎉 O Grande Dia do Henrique Neve Haddad 🎉</h1>
-        <p>Preparem-se para celebrar os 2 anos do nosso pequeno herói!</p>
-        <img src="https://i.imgur.com/XYZabc1.png" alt="Bernard, o Urso Polar" class="bernard-image">
-    </header>
+  <div class="container">
+    <h1>Henrique Neves Haddad</h1>
+    <p>Seja bem-vindo à celebração do Henrique!</p>
 
-    <section>
-        <div class="countdown" id="countdown"></div>
-        <script>
-            // Configuração do cronômetro
-            const eventDate = new Date("February 8, 2025 00:00:00").getTime();
-
-            function updateCountdown() {
-                const now = new Date().getTime();
-                const timeLeft = eventDate - now;
-
-                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-                document.getElementById("countdown").innerHTML = 
-                    `${days}d ${hours}h ${minutes}m ${seconds}s`;
-            }
-
-            setInterval(updateCountdown, 1000);
-            updateCountdown();
-        </script>
-    </section>
-
-    <section class="message">
-        <h2>Mensagem Especial aos Convidados</h2>
-        <p>Queridos amigos e familiares,</p>
-        <p>Estamos muito felizes em convidá-los para celebrar o segundo aniversário do Henrique Neve Haddad! Será um dia mágico repleto de alegria, risadas e muitas surpresas. Inspirados no querido Bernard, o urso polar atrapalhado e adorável, preparamos uma festa cheia de encanto e diversão para todos.</p>
-        <p>Vocês são parte essencial dessa jornada, e mal podemos esperar para compartilhar esse momento especial com vocês. Vamos juntos fazer deste dia inesquecível!</p>
-        <p>Com carinho,<br>Família Haddad ❤️</p>
-    </section>
-
-    <footer>
-        <p>Feito com amor por Bernard, o Urso Polar 🐻❄️</p>
-    </footer>
+    <div class="image-container">
+      <img src="/mnt/data/Bernard_the_Polar_Bear.webp" alt="Urso Polar Felíz">
+    </div>
+  </div>
 </body>
 </html>
+
